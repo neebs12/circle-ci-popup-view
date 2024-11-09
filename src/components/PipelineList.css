@@ -1,0 +1,215 @@
+.pipeline-list {
+  max-width: 100%;
+  padding: 6px;
+  overflow-y: auto;
+  max-height: 600px;
+}
+
+.pipeline-card {
+  background: #fff;
+  border: 1px solid #e1e4e8;
+  border-radius: 4px;
+  margin-bottom: 6px;
+  padding: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.pipeline-header {
+  margin-bottom: 4px;
+}
+
+.pipeline-info {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85em;
+  min-width: 0; /* Allow flex items to shrink below content size */
+}
+
+.pipeline-number-link {
+  color: #0366d6;
+  text-decoration: none;
+  font-weight: bold;
+  white-space: nowrap;
+  flex-shrink: 0; /* Prevent number from shrinking */
+}
+
+.pipeline-number-link:hover {
+  text-decoration: underline;
+}
+
+.actor-info {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0; /* Prevent avatar from shrinking */
+}
+
+.actor-avatar {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+
+.robot-avatar {
+  font-size: 14px;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pipeline-branch {
+  background: #f1f8ff;
+  padding: 1px 6px;
+  border-radius: 10px;
+  color: #0366d6;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1;
+  min-width: 0; /* Allow text truncation */
+}
+
+.commit-info {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 4px 0;
+  padding: 3px 6px;
+  background: #f6f8fa;
+  border-radius: 3px;
+  font-size: 0.85em;
+  min-width: 0; /* Allow flex items to shrink */
+}
+
+.commit-hash {
+  font-family: monospace;
+  color: #586069;
+  white-space: nowrap;
+  flex-shrink: 0; /* Prevent hash from shrinking */
+}
+
+.commit-subject {
+  color: #24292e;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1; /* Take remaining space */
+  min-width: 0; /* Allow text truncation */
+}
+
+.workflows {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.workflow-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.85em;
+}
+
+.workflow-name-link {
+  text-decoration: none;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0; /* Allow text truncation */
+  flex: 1;
+}
+
+.workflow-details {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  flex-shrink: 0; /* Prevent status and time from shrinking */
+}
+
+.workflow-status {
+  text-transform: capitalize;
+}
+
+.workflow-time {
+  color: #586069;
+  font-size: 0.9em;
+}
+
+/* Status-based colors */
+.status-success {
+  background: #dcffe4;
+}
+
+.workflow-name-link:hover {
+  text-decoration: underline; 
+}
+
+.status-success .workflow-name-link {
+  color: #1a7f37;
+}
+
+.status-success .workflow-status {
+  color: #1a7f37;
+}
+
+.status-failed {
+  background: #ffebe9;
+}
+
+.status-failed .workflow-name-link {
+  color: #cf222e;
+}
+
+.status-failed .workflow-status {
+  color: #cf222e;
+}
+
+.status-running {
+  background: #f6f8fa;
+}
+
+.status-running .workflow-name-link {
+  color: #24292e;
+}
+
+.status-running .workflow-status {
+  color: #24292e;
+}
+
+/* Loading and Error states */
+.loading, .error {
+  padding: 8px;
+  text-align: center;
+  color: #24292e;
+  font-size: 0.9em;
+}
+
+.error {
+  color: #cf222e;
+  background: #ffebe9;
+  border-radius: 4px;
+}
+
+/* Scrollbar styling */
+.pipeline-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.pipeline-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.pipeline-list::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+.pipeline-list::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

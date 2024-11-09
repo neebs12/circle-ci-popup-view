@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "version": "0.0.1.0",
+  "name": "CI Popup View",
+  "description": "A Chrome extension that displays Circle CI pipelines in a popup window.",
+  "icons": {
+    "128": "icon128.png"
+  },
+  "permissions": ["storage"],
+  "host_permissions": [
+    "https://circleci.com/api/v2/*"
+  ],
+  "action": {
+    "default_popup": "index.html"
+  },
+  "options_page": "options.html"
+}

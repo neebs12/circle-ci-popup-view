@@ -1,0 +1,107 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  width: 400px;
+  background-color: white;
+}
+
+.app-header {
+  padding: 10px;
+  background-color: #2D333B;
+  border-bottom: 1px solid #444c56;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header-selectors {
+  display: flex;
+  gap: 8px;
+  flex: 1;
+}
+
+.project-select,
+.view-select {
+  flex: 1;
+  padding: 6px;
+  border: 1px solid #444c56;
+  border-radius: 6px;
+  background-color: #22272e;
+  font-size: 14px;
+  color: #adbac7;
+}
+
+.project-select:focus,
+.view-select:focus {
+  outline: none;
+  border-color: #539bf5;
+  box-shadow: 0 0 0 2px rgba(83, 155, 245, 0.3);
+}
+
+.config-button {
+  background: none;
+  border: none;
+  padding: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+
+.config-button:hover {
+  background-color: #444c56;
+}
+
+.gear-icon {
+  width: 20px;
+  height: 20px;
+}
+
+main {
+  flex: 1;
+  overflow-y: auto;
+  min-height: 0;
+  background-color: white;
+}
+
+.config-needed {
+  padding: 20px;
+  text-align: center;
+  background-color: white;
+  color: #24292e; /* Ensure text is visible */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.config-needed h2 {
+  margin-bottom: 12px;
+  color: #24292e;
+}
+
+.config-needed p {
+  margin-bottom: 20px;
+  color: #57606a;
+}
+
+.options-button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #2ea44f;
+  color: white;
+  border: 1px solid rgba(27, 31, 36, 0.15);
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.options-button:hover {
+  background-color: #2c974b;
+}
